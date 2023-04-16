@@ -1,0 +1,28 @@
+Angular MFE application setup
+
+step 1: first create workspace for your MFE
+	  ng new jobsgulf --create-application=false
+
+step 2: create projects folder
+
+step 3: create shell project inside projects folder and follow the same for other projects
+	  ng g application shell --routing=true --style=scss
+	  ng g application jobs --routing=true --style=scss
+
+step 4: npm i @angular-architects/module-federation
+
+step 5: then add module federation for each projects
+ 	  ng add @angular-architects/module-federation --project=shell
+	  ng add @angular-architects/module-federation --project=jobs
+
+step 6: add feature module as following for each projects and setup routing properly
+	  ng g m shell-feature --routing
+	  ng g m jobs-feature --routing
+
+step 7: create components for each projects
+	  ng g c dashboard (in shell project)
+	  ng g c search-jobs (in jobs project)
+
+step 8: ng serve shell
+
+step 9: ng serve jobs
