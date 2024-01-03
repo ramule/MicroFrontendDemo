@@ -26,3 +26,7 @@ step 7: create components for each projects
 step 8: ng serve shell
 
 step 9: ng serve jobs
+
+
+
+https://stackblitz.com/edit/wissen-angular-coding-challenge-2022-e3mc6t?file=src%2Fapp%2Ftypes%2Fuser.type.ts
